@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: " en-US" }}">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>{{ page.title }} - {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+</head>
+
+<body>
+  <div class="grid content-center justify-center w-screen h-screen gap-10 text-center text-white bg-no-repeat bg-cover bg-banner" style="justify-items: center;">
+    <a href="/"><img src="./assets/images/logo.png" srcset="./assets/images/logo.png 1x, ./assets/images/logo_2x.png 2x" alt=""></a>
+    <div class="max-w-4xl text-center">
+      <h2 class="text-4xl text-white">{{content}}</h2>
+    </div>
+  </div>
+</body>
+
+</html>
