@@ -1,6 +1,6 @@
 url: ''
 baseurl: ''
-title: 'Jekyllwind'
+title: 'PeakExclusive'
 
 plugins:
   - jekyll-postcss-v2

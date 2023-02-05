@@ -497,7 +497,7 @@ var onRequest = async (context) => {
       if (success) {
         return pluginArgs.respondWith(submission);
       }
-      return new Response(`Could not send your email. Please try again.`, {
+      return new Response(`Could not send your email. Please try again. ${JSON.stringify(errors)}`, {
         status: 512
       });
     }
