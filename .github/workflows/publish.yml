@@ -4,10 +4,6 @@ on:
   push:
     branches:
       - main
-    paths-ignore:
-      - 'Gemfile'
-      - 'README.md'
-      - 'LICENSE.md'
 
 # Build site using jekyll
 jobs:
