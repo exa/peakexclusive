@@ -11,6 +11,6 @@ export const onRequest = mailchannelsPlugin({
   respondWith: () =>
     new Response(null, {
       status: 302,
-      headers: { Location: "/thank-you" },
+      headers: { Location: "/thankyou" },
     }),
 });
