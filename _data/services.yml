@@ -1,24 +1,23 @@
 - name: Luxury and Comfort
+  description: Flying should be a pleasure and we'll make your charter experience as luxurious and comfortable as possible.
   icon: luxury_ico
-  description: |
-    Flying should be a pleasure and we'll make your charter experience as luxurious and comfortables as possible.
-- name: Luxury and Comfort
-  icon: luxury_ico
-  description: |
-    Flying should be a pleasure and we'll make your charter experience as luxurious and comfortables as possible.
-- name: Luxury and Comfort
-  icon: luxury_ico
-  description: |
-    Flying should be a pleasure and we'll make your charter experience as luxurious and comfortables as possible.
-- name: Luxury and Comfort
-  icon: luxury_ico
-  description: |
-    Flying should be a pleasure and we'll make your charter experience as luxurious and comfortables as possible.
-- name: Luxury and Comfort
-  icon: luxury_ico
-  description: |
-    Flying should be a pleasure and we'll make your charter experience as luxurious and comfortables as possible.
-- name: Luxury and Comfort
-  icon: luxury_ico
-  description: |
-    Flying should be a pleasure and we'll make your charter experience as luxurious and comfortables as possible.
+
+- name: All Around the Globe
+  description: Flying should be a pleasure and we'll make your charter experience as luxurious and comfortable as possible.
+  icon: globe_ico
+
+- name: Modern Aircrafts
+  description: Flying should be a pleasure and we'll make your charter experience as luxurious and comfortable as possible.
+  icon: airplane_ico
+
+- name: Safety and Security
+  description: Flying should be a pleasure and we'll make your charter experience as luxurious and comfortable as possible.
+  icon: safety_ico
+
+- name: Experienced Crew
+  description: Flying should be a pleasure and we'll make your charter experience as luxurious and comfortable as possible.
+  icon: crew_ico
+
+- name: Additional Services
+  description: Flying should be a pleasure and we'll make your charter experience as luxurious and comfortable as possible.
+  icon: stewardess_ico
