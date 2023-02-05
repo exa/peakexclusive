@@ -15,10 +15,10 @@
         <img src="./assets/images/logo.png" srcset="./assets/images/logo.png 1x, ./assets/images/logo_2x.png 2x" alt="">
         <nav class="flex-row hidden gap-4 text-sm font-medium lg:text-base lg:gap-6 md:flex">
           <a href="#">Home</a>
-          <a href="#leasing">Leasing & Charter</a>
+          <a href="#leasing-charter">Leasing & Charter</a>
           <a href="#management">Aircraft Management</a>
           <a href="#benfits">Benefits</a>
-          <a href="#">Contact Us</a>
+          <a href="#" onclick="javascript: toggleContact()">Contact Us</a>
         </nav>
       </div>
     </div>
@@ -31,11 +31,11 @@
       </div>
     </div>
   </div>
-  <h1 class="max-w-3xl m-auto mt-24 text-4xl leading-normal text-center md:text-5xl hl">
+  <h1 class="max-w-3xl pt-24 mx-auto text-4xl text-center md:leading-normal md:text-5xl hl" id="leasing-charter">
     Private Jet for Business and Leisure Purposes
   </h1>
   <div id="leasing" class="relative mb-36 group">
-    <div class="container flex flex-col max-w-5xl gap-20 px-3 mx-auto lg:flex-row mt-14 lg:px-0">
+    <div class="container flex flex-col max-w-5xl gap-20 px-3 mx-auto mt-20 lg:flex-row lg:px-0">
       <div class="mt-10">
         <h3>Aircraft Leasing</h3>
         <p class="text-base">Unfortunately, we did not come up with leasing, but we had the opportunity to make this service as attractive as possible and improve its level every day!
@@ -58,18 +58,18 @@
     </div>
   </div>
   <div class="bg-no-repeat bg-cover bg-dark bg-map" id="management">
-    <div class="max-w-3xl px-3 py-48 mx-auto lg:px-0">
+    <div class="max-w-3xl px-3 mx-auto py-44 lg:px-0">
       <h1 class="mb-10 text-gold">Service management</h1>
       <div class="text-2xl text-white">
-        <p>We know what you don't need to know. We have answers to all questions: how, why and why in terms of service management.<br>
-          The competence of our specialists meets the highest professional requirements.<br>
-          It is enough to use them only once to understand that the search for another artist is a waste of time.<br>
-          Instead of hassle, you will only have to read our reports on the found logistical and economic solutions over a cup of aromatic coffee. The taste of coffee will only become brighter! It remains only to let us solve your problems in the best possible way.</p>
+        <p class="mb-3">We know what you don't need to know. We have answers to all questions: how, why and why in terms of service management.</p>
+          <p class="mb-3">The competence of our specialists meets the highest professional requirements.</p>
+          <p class="mb-3">It is enough to use them only once to understand that the search for another artist is a waste of time.</p>
+          <p>Instead of hassle, you will only have to read our reports on the found logistical and economic solutions over a cup of aromatic coffee. The taste of coffee will only become brighter! It remains only to let us solve your problems in the best possible way.</p>
       </div>
     </div>
   </div>
-  <div class="w-full px-3 lg:px-0">
-    <h1 class="max-w-4xl mx-auto my-24 text-4xl text-center md:leading-snug md:text-5xl">Learn More About Our Premium
+  <div class="w-full px-3 lg:px-0" id="benfits">
+    <h1 class="max-w-4xl py-24 mx-auto text-4xl text-center md:leading-snug md:text-5xl">Learn More About Our Premium
       Private Jet
       Services</h1>
     <div class="flex flex-col lg:flex-row">
@@ -79,7 +79,7 @@
 
         </div>
       </div>
-      <div class="w-full lg:w-3/4 px-3 lg:px-0 bg-[#F2F0EF] py-16 lg:pl-48 z-10 relative" id="benfits">
+      <div class="w-full lg:w-3/4 px-3 lg:px-0 bg-[#F2F0EF] py-16 lg:pl-48 z-10 relative">
         <div class="grid max-w-3xl grid-cols-1 md:grid-cols-2 gap-y-12 gap-x-36 services">
           {% for service in site.data.services %}
           <div>

@@ -7,9 +7,13 @@
 @tailwind components;
 @tailwind utilities;
 
- body {
+html {
+  scroll-behavior: smooth;
+}
+
+body {
   color: #555;
- }
+}
 
 h1 {
   @apply font-serif text-4xl md:text-6xl;
