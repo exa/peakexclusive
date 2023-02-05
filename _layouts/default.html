@@ -15,9 +15,9 @@
         <img src="./assets/images/logo.png" srcset="./assets/images/logo.png 1x, ./assets/images/logo_2x.png 2x" alt="">
         <nav class="flex-row hidden gap-4 text-sm font-medium lg:text-base lg:gap-6 md:flex">
           <a href="#">Home</a>
-          <a href="#">Leasing & Charter</a>
-          <a href="#">Aircraft Management</a>
-          <a href="#">Benefits</a>
+          <a href="#leasing">Leasing & Charter</a>
+          <a href="#management">Aircraft Management</a>
+          <a href="#benfits">Benefits</a>
           <a href="#">Contact Us</a>
         </nav>
       </div>
@@ -26,9 +26,7 @@
       <div class="max-w-[900px] px-3 lg:px-0">
         <h1 class="leading-snug text-white">Safe, Convenient & Efficient</h1>
         <p class="text-2xl mt-9">
-          Corsons is proud to have the opportunity to present its experience at your service.
-          We are also honored to have the support of our selected partners. with whom we have the sole objective - to
-          provide you with the highest level of quality and reliability.
+          All over the world by plane - this is your future, the best provision of which is our present!
         </p>
       </div>
     </div>
@@ -40,10 +38,9 @@
     <div class="container flex flex-col max-w-5xl gap-20 px-3 mx-auto lg:flex-row mt-14 lg:px-0">
       <div class="mt-10">
         <h3>Aircraft Leasing</h3>
-        <p class="text-base">Aircraft leasing is an essential and increasingly prominent enabler in aviation. It is
-          ideal for anyone who flies SO or more hours per year and wants the financial flexibility afforded by aircraft
-          leasing versus aircraft ownership. Corsons is proud to say that aircraft leasing is its core service. With
-          Corsons leasing you can feel free to enjoy guaranteed aircraft availability.</p>
+        <p class="text-base">Unfortunately, we did not come up with leasing, but we had the opportunity to make this service as attractive as possible and improve its level every day!
+          In addition to the traditional financial attractiveness of leasing (no balance troubles, no need for maintenance, etc.), we have brought something more - your high wishes have become available on earth.
+          All the cream goes to you, and we will take care of the whole routine.</p>
       </div>
       <img class="transition-all duration-1000 group-[.is-visible]:translate-x-0  md:translate-x-[100vw] shadow"
         src="./assets/images/leasing_pic.jpg"
@@ -52,9 +49,7 @@
     <div class="container flex flex-col max-w-5xl gap-20 px-3 mx-auto lg:flex-row-reverse lg:-mt-20 lg:px-0">
       <div class="mt-20 lg:mt-32">
         <h3>Aircraft Charter</h3>
-        <p class="text-base">Chartering an aircraft is the most flexible and efficient service in business aviation.
-          Through us you get access to hundreds of aircraft operated by trusted companies with a proven safety record
-          and outstanding quality. Our exclusive arrangements with these companies, a profound knowledge of the market.
+        <p class="text-base">Chartering an aircraft is an opportunity to put our best entrepreneurial qualities to your advantage. We are not inferior to our competitors in terms of speed, quality and efficiency of the task. But we are out of reach for them in that in most cases they turn to us and for us the active growth of new customers, partners and friends remains a mystery.
         </p>
       </div>
       <img class="transition-all duration-1000 group-[.is-visible]:translate-x-0 md:-translate-x-[100vw] shadow"
@@ -62,19 +57,14 @@
         srcset="./assets/images/charter_pic.jpg 1x, ./assets/images/charter_pic_2x.jpg 2x">
     </div>
   </div>
-  <div class="bg-no-repeat bg-cover bg-dark bg-map">
+  <div class="bg-no-repeat bg-cover bg-dark bg-map" id="management">
     <div class="max-w-3xl px-3 py-48 mx-auto lg:px-0">
       <h1 class="mb-10 text-gold">Service management</h1>
       <div class="text-2xl text-white">
-        <p>Corsons will use its expertise in the business aviation industry and apply its high standards in order to
-          free vou from unnecessary worries. Our team of specialists is full competent in ever necessar aspect of
-          administration and aircraft management and is thus able to increase vour cost effec-tiveness, becoming
-          responsible for your logistics, operations and administration. We auarantee our clients complete transparencv
-          confi.
-          dentialitv and security</p>
-        <p>
-          Allow us to take on the complicated processes of aircraft management so that voucan tuv eniov the pleasant
-          eyperience or tiving with Corsons</p>
+        <p>We know what you don't need to know. We have answers to all questions: how, why and why in terms of service management.<br>
+          The competence of our specialists meets the highest professional requirements.<br>
+          It is enough to use them only once to understand that the search for another artist is a waste of time.<br>
+          Instead of hassle, you will only have to read our reports on the found logistical and economic solutions over a cup of aromatic coffee. The taste of coffee will only become brighter! It remains only to let us solve your problems in the best possible way.</p>
       </div>
     </div>
   </div>
@@ -89,7 +79,7 @@
 
         </div>
       </div>
-      <div class="w-full lg:w-3/4 px-3 lg:px-0 bg-[#F2F0EF] py-16 lg:pl-48 z-10 relative">
+      <div class="w-full lg:w-3/4 px-3 lg:px-0 bg-[#F2F0EF] py-16 lg:pl-48 z-10 relative" id="benfits">
         <div class="grid max-w-3xl grid-cols-1 md:grid-cols-2 gap-y-12 gap-x-36 services">
           {% for service in site.data.services %}
           <div>
