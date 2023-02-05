@@ -4,8 +4,18 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
-# Build site using jekyll
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -25,24 +35,14 @@ jobs:
           node-version: '16'
       # Install PostCSS plugins (from your package.json)
       - run: npm install
-      - name: Build site
-      # use jekyll-action-ts to build
-      # https://github.com/limjh16/jekyll-action-ts
-        uses: limjh16/jekyll-action-ts@v2
-        with:
-          enable_cache: true
-          # custom_opts: '--verbose --trace'  #'--drafts --future'
-          ### If you need to specify any Jekyll build options, enable the above input
-          ### Flags accepted can be found here https://jekyllrb.com/docs/configuration/options/#build-command-options
-      # use actions-gh-pages to deploy
-      # https://github.com/peaceiris/actions-gh-pages
-      # - name: Deploy
-      #   uses: peaceiris/actions-gh-pages@v3
-      #   with:
-      #     # GITHUB_TOKEN secret is set up automatically
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}
-      #     publish_dir: ./_site
-
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v3
+      - name: Build with Jekyll
+        # Outputs to the './_site' directory by default
+        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        env:
+          JEKYLL_ENV: production
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v1
