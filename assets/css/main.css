@@ -82,6 +82,7 @@ textarea::placeholder, input::placeholder {
 #contact-form {
   transform: translateX(calc(36px - 100%));
   top: calc(50vh - 184px);
+  z-index: 100;
 }
 
 #contact-form.open {
