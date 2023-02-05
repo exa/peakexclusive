@@ -1,0 +1,106 @@
+---
+---
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Prata&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ body {
+  color: #555;
+ }
+
+h1 {
+  @apply font-serif text-4xl md:text-6xl;
+}
+
+.container {
+  @apply max-w-6xl;
+}
+
+h1, h2, h3 {
+  color: #000;
+}
+
+h3 {
+  @apply mb-2 text-2xl font-medium;
+}
+
+h1.hl {
+  display: block;
+  @apply pb-12;
+  position: relative;
+}
+
+h1.hl::after {
+  content: '';
+  display: block;
+  width: 70px;
+  height: 4px;
+  background: #a6977d;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 35px);
+}
+
+.services img {
+  margin-bottom: 20px;
+}
+
+.services  h3 {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.services  p {
+  font-weight: 400;
+  font-size: 14px;
+
+  max-width: 270px;
+}
+
+input[type=text], input[type=email], input[type=tel] {
+  height: 40px;
+  line-height: 40px;
+}
+
+textarea, input[type=text], input[type=email], input[type=tel] {
+  @apply pl-2 border-2 border-solid border-gold;
+}
+
+textarea {
+  @apply p-2;
+}
+
+textarea::placeholder, input::placeholder {
+  @apply text-gold;
+  opacity: 1; /* Firefox */
+}
+
+#contact-form {
+  transform: translateX(calc(36px - 100%));
+}
+
+#contact-form.open {
+  transform: translateX(0);
+}
+
+#contact-form #tab {
+  content: attr(data-tab);
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  width: 36px;
+  cursor: pointer;
+  @apply absolute top-0 right-0 block h-full px-1 py-4 font-medium leading-snug text-center text-white uppercase bg-gold;
+}
+
+#contact-form .arrow {
+  transform: rotate(180deg);
+}
+
+#contact-form.open .arrow {
+  transform: rotate(0deg);
+}
