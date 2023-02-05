@@ -7,6 +7,7 @@ export const onRequest = mailchannelsPlugin({
     },
   ],
   from: { name: "Enquiry", email: "no-reply@peakexclusive.com" },
+  subject: "New enquiry from Peak Exclusive",
   respondWith: () =>
     new Response(null, {
       status: 302,
